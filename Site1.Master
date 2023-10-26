@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Practical_Web_Development.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="description" content="Elevate your martial arts journey with Shirokaze Do Shotokan, where tradition meets modern excellence. Explore our world of discipline, strength, and community. Join us today!" />
+    <meta name="robots" content="index, follow">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <header>
+        <img src="Images/banner1.png" alt="Karate Club Banner" 
+            style="width: 1081px; height: 284px">
+    </header>
+        <nav>
+            <ul>
+                <li id="list-item"><a href="home.aspx" alt="Home Link" >Home</a></li>
+                <li id="list-item"><a href="courses.aspx" alt="Course Offered Link" >Courses</a></li>
+                <li id="list-item"><a href="training.aspx" alt="Training Times" >Training</a></li>
+                <li id="list-item"><a href="about.aspx" alt="About Us Link" >About</a></li>
+            </ul>
+        </nav>
+
+        <h1> Shirokaze Do Shotokan</h1>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+
+     <p class= "footer">  
+        <span>&copy 2023</span>
+    </p>
+    </div>
+
+    
+    </form>
+</body>
+</html>
